@@ -1,0 +1,2 @@
+# projetocorreios
+Você trabalha em uma empresa de desenvolvimento de software que recebeu a seguinte demanda. Um cliente que costuma realizar muitas compras online (para economizar tempo, gasolina e fretes) está enfrentando dificuldades para identificar o status de entrega das suas aquisições online. Este cliente espera poder visualizar o status de todas as suas compras de forma centralizada a partir dos códigos de rastreio dos Correios. Uma das premissas do projeto é que seja utilizada a API do Postmon dos CORREIOS.
