@@ -1,0 +1,2 @@
+Chegar até a pasta front-end-application
+Depois rodar npm run serve
