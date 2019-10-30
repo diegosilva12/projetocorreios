@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <div id="menu">
     <v-navigation-drawer v-model="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app>
       <v-list dense>
         <template v-for="item in items">
@@ -48,7 +48,7 @@
 
     <v-app-bar :clipped-left="$vuetify.breakpoint.lgAndUp" app color="blue darken-3" dark>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
-        <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+       
         <span class="hidden-sm-and-down">Sistema de Rastreio</span>
       </v-toolbar-title>
       <v-text-field flat solo-inverted hide-details label="Pesquisa" class="hidden-sm-and-down"></v-text-field>
@@ -63,7 +63,7 @@
         </v-avatar>
       </v-btn>
     </v-app-bar>
-    
+   
     <v-btn bottom color="info" dark fab fixed right @click="dialog = !dialog">
       <v-icon>mdi-plus</v-icon>
     </v-btn>
@@ -82,7 +82,7 @@
             <v-col cols="12">
               <v-text-field
                 label="Insira o código de rastreio"
-                placeholder="Insira o  código dde rastreio"
+                placeholder="Insira o  código de rastreio"
               ></v-text-field>
             </v-col>
             <v-col cols="12">
@@ -96,19 +96,19 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-app>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "CadastraCodigo",
+  name: "Home",
   data: () => ({
     dialog: false,
     drawer: null,
     items: [
-      { text: "Home", page:'home' },
-      { text: "Cadastrar código", page:'cadastra-codigo'},
-      { text: "Meus Dados", page:'meus-dados' },
+      { text: "Home", page: 'home' },
+      { text: "Cadastrar código", page: 'cadastrar-codigo' },
+      { text: "Meus Dados", page: 'meus-dados' },
       { text: "Sair do Sistema" }
     ]
   })
