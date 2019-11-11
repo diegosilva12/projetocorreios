@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.rest.example.student;
+package sistemaCorreios.fean.sistemaCorreios.student;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

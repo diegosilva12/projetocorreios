@@ -21,7 +21,7 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="success">Entrar</v-btn>
+              <v-btn color="success" :to="{home:'home'}">Entrar</v-btn>
               <v-btn color="primary">Inscreva-se</v-btn>
             </v-card-actions>
           </v-card>
@@ -35,6 +35,10 @@
 
 <script>
 export default {
-  data: () => ({})
+  data: () => ({
+    items: [
+      {text: "Home", page: "home"}
+    ]
+  })
 };
 </script>

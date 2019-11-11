@@ -1,10 +1,12 @@
 <template>
   <div id="home">
     <Menu />
-    <v-container class="col-md-12">
-      <div class="col-md-12 v-data-table theme--light">
-        <div class="v-data-table__wrapper">
-          <table>
+    <v-content>
+      <v-container class="fill-height" fluid>
+        <v-row align="center" justify="center">
+          <v-col class="text-center">
+            <div class="fill-height" fluid>
+             <table class="col-md-12">
             <colgroup>
               <col class />
               <col class />
@@ -87,9 +89,11 @@
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-    </v-container>
+           </div> 
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
   </div>
 </template>
   
