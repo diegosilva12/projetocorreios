@@ -1,4 +1,4 @@
-package com.fean.sistemaCorreios;
+package com.projetocorreios.poo3;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

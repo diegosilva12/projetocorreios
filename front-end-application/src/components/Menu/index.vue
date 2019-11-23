@@ -1,38 +1,13 @@
-  
 <template>
-  <div>
+  <div id="menu">
     <v-navigation-drawer v-model="drawer" app>
-      <v-list dense>
-        <v-list-item link>
+      <v-list >
+        <v-list-item v-for="item in itensMenu" :to="item.page" :key="item.title">
           <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
+            <v-icon></v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-plus-circle</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Cadastrar Código</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-edit</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Meus Dados</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-power</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Sair do Sistema</v-list-item-title>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -68,7 +43,7 @@
 
     <v-app-bar app color="#0d47a1" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Sistemas Correios</v-toolbar-title>
+      <v-toolbar-title>{{ company }}</v-toolbar-title>
     </v-app-bar>
     <v-footer color="#0d47a1" app>
       <span class="white--text center">&copy; 2019 Desenvolvido por Diego Silva</span>
@@ -77,19 +52,25 @@
 </template>
 
 <script>
+
+import router from '@/router'
+
 export default {
-  props: {
-    source: String
-  },
-  data: () => ({
-    dialog: false,
-    drawer: null,
-    items: [
-      { text: "Home", page: "home" },
-      { text: "Cadastrar código", page: "cadastrar-codigo" },
-      { text: "Meus Dados", page: "meus-dados" },
-      { text: "Sair do Sistema", page: "login" }
-    ]
-  })
-};
+  name: 'Menu',
+  data() {
+    return {
+      drawer: null,
+      dialog: null,
+      company: "Sistema de rastreio",
+
+      itensMenu: [
+        { title: 'Início', page: '/home'},
+        { title: 'Cadastar Código', page: '/cadastrar-codigo'},
+        { title: 'Meus Dados', page: '/meus-dados'},
+        { title: 'Sair do Sistema', page:'/'}
+        
+      ]
+    }
+  }
+}
 </script>

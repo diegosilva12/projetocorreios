@@ -29,7 +29,7 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="success">Salvar</v-btn>
+              <v-btn color="success" to="/">Salvar</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>

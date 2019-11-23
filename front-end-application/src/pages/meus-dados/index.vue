@@ -47,11 +47,41 @@
                       required
                     ></v-text-field>
                   </v-col>
+                  <v-col cols="12" md="6">
+                    <v-text-field 
+                    label="CEP"  id="cep" name="cep" type="text">
+                    </v-text-field>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <v-text-field 
+                    label="Logradouro" id="logradouro" name="logradouro" type="text">
+                    </v-text-field>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <v-text-field 
+                    label="Bairro" id="bairro" name="bairro" type="text">
+                    </v-text-field>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <v-text-field 
+                    label="Cidade" id="cidade" name="cidade" type="text">
+                    </v-text-field>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <v-text-field 
+                    label="Estado" id="estado" name="estado" type="text">
+                    </v-text-field>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <v-text-field 
+                    label="Numero" id="numero" name="numero" type="text">
+                    </v-text-field>
+                  </v-col>
                   <v-btn
                     :disabled="!valid"
                     color="success"
                     class="mr-4"
-                    @click="atualizar"
+                    to="meus-dados"
                   >Atualizar</v-btn>
                 </v-row>
               </v-container>

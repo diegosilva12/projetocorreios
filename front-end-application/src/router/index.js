@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '../pages/login/'
-import SignUp from '../pages/sign-up/'
-import Home from '../pages/home/'
-import MeusDados from '../pages/meus-dados/'
-import CadastrarCodigo from '../pages/cadastrar-codigo/'
+import Login from '@/pages/login/'
+import SignUp from '@/pages/sign-up/'
+import Home from '@/pages/home/'
+import MeusDados from '@/pages/meus-dados/'
+import CadastrarCodigo from '@/pages/cadastrar-codigo/'
 
 Vue.use(Router)
 
@@ -13,7 +13,8 @@ const router = new Router({
         {
             path: '/',
             name: 'Login',
-            component: Login 
+            component: Login,
+            
         },
         {
             path: '/sign-up',

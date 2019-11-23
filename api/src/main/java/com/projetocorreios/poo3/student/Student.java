@@ -1,4 +1,4 @@
-package sistemaCorreios.fean.sistemaCorreios.student;
+package com.projetocorreios.poo3.student;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

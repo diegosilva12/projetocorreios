@@ -21,8 +21,8 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="success" :to="{home:'home'}">Entrar</v-btn>
-              <v-btn color="primary">Inscreva-se</v-btn>
+              <v-btn color="success" to="home">Entrar</v-btn>
+              <v-btn color="primary" to="sign-up">Inscreva-se</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
